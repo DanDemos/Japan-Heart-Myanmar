@@ -89,5 +89,9 @@ nav > ul > li > a::before {
   -webkit-transition: transform 0.1s ease 0s;
   transition: transform 0.1s ease 0s;
   width: 100%;
+}
+
+nav > ul > li > a:hover::before{
   transform: scale3d(1, 1, 1);
+  transition-duration: 0.3s;
 }
