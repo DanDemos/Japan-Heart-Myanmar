@@ -77,7 +77,7 @@ a:hover {
 
 nav > ul > li > a::before {
   background: transparent none repeat scroll 0 0;
-  background-color: #ed9914;
+  background-color: #da002c;
   bottom: -5px;
   content: '';
   height: 2px;
