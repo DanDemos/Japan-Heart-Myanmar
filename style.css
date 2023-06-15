@@ -3,11 +3,14 @@
   -o-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   transition: all 0.2s linear;
+
+  position: relative;
 }
 
 /*Text Colors */
 a {
   color: #393636;
+  white-space: nowrap;
 }
 
 a:hover {
@@ -91,14 +94,22 @@ nav > ul > li > a::before {
   width: 100%;
 }
 
-nav > ul > li > a:hover::before {
+nav > ul > li:hover a::before {
   transform: scale3d(1, 1, 1);
   transition-duration: 0.3s;
 }
+
+nav > ul > .active{
+  background-color: #da002c;
+}
+
+nav > ul > .active > a{
+  color: white;
+}
+
 nav > ul > li > ul {
   background: rgb(255, 255, 255) none repeat scroll 0 0;
   left: 0;
-  right: 0;
   margin-left: auto;
   margin-right: auto;
   opacity: 0;
@@ -111,10 +122,16 @@ nav > ul > li > ul {
   -webkit-transition: 0.3s linear 0s;
   transition-duration: 0.3s linear 0s;
 }
-nav > ul > li > a:hover + ul {
+
+nav > ul > li > ul > li {
+  border-bottom: 1px solid rgba(131, 131, 131, 0.1);
+}
+
+nav > ul > li:hover > ul {
   opacity: 1;
   visibility: visible;
   z-index: 99;
   -webkit-transition: 0.3s linear 0s;
   transition: 0.3s linear 0s;
 }
+
