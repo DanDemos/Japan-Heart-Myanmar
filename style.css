@@ -30,7 +30,7 @@ a {
 }
 
 a:hover {
-  color: #C81133;
+  color: #c81133;
 }
 
 /* .hover-italic {
@@ -47,11 +47,11 @@ a:hover {
 }
 
 .cl-primary {
-  color: #C81133;
+  color: #c81133 !important;
 }
 
 .cl-hover-primary:hover {
-  color: #C81133;
+  color: #c81133 !important;
 }
 
 .cl-secondary {
@@ -63,11 +63,11 @@ a:hover {
 }
 
 .border-primary {
-  border: solid 2px #C81133 !important;
+  border: solid 2px #c81133 !important;
 }
 
 .bg-primary {
-  background-color: #C81133 !important;
+  background-color: #c81133 !important;
 }
 
 .bg-secondary {
@@ -100,7 +100,7 @@ a:hover {
 
 nav > ul > li > a::before {
   background: transparent none repeat scroll 0 0;
-  background-color: #C81133;
+  background-color: #c81133;
   bottom: -5px;
   content: '';
   height: 2px;
@@ -120,7 +120,7 @@ nav > ul > li:hover a::before {
 }
 
 nav > ul > .active {
-  background-color: #C81133;
+  background-color: #c81133;
 }
 
 nav > ul > .active > a {
@@ -156,14 +156,80 @@ nav > ul > li:hover > ul {
 }
 
 .swiper {
-	width: auto;
-	height: auto;
+  width: auto;
+  height: auto;
 }
 
-.home.swiper-slide  img{
-    padding: 5px;
-    width: 100%!important;
-    object-fit: cover;
-    max-height: 100%;
-    height: 300px;
+.home.swiper-slide img {
+  padding: 5px;
+  width: 100% !important;
+  object-fit: cover;
+  max-height: 100%;
+  height: 300px;
+}
+
+#footer {
+  background: #f1eef0;
+  padding: 0 0 30px;
+  color: #000;
+  font-size: 14px;
+}
+
+.footer-img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+#footer .footer-top {
+  background: #fff;
+  /* border-top: 1px solid #474747; */
+  /* border-bottom: 1px solid #474747; */
+  padding: 60px 0 30px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #c81133;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.social-links a {
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  padding-top: 10px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #c81133;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #000;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
 }
