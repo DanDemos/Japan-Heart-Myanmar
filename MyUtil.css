@@ -31,6 +31,10 @@ a:hover {text-decoration: none;}
 /*---------------------------------------------*/
 h1,h2,h3,h4,h5,h6,p {margin: 0px;}
 
+p{
+	font-size: 14px;
+}
+
 ul, li {
 	margin: 0px;
 	list-style-type: none;
@@ -53,6 +57,12 @@ button {
 button:focus {outline: none;}
 
 /*---------------------------------------------*/
+
+.swiper {
+	width: 600px;
+	height: 300px;
+}
+
 iframe {border: none;}
 /*//////////////////////////////////////////////////////////////////
 [ FONT SIZE ]*/
@@ -3311,6 +3321,8 @@ iframe {border: none;}
 .bg-white {background-color: white!important;}
 .bg-black {background-color: #393636;}
 .bg-blue {background-color: blue;}
+.bg-whitegrey { background-color: #eeeeee; }
+.bg-grey { background-color: #e6e6e6; }
 
 /*------------------------------------------------------------------
 [ Line height ]*/
