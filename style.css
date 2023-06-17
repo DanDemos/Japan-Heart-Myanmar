@@ -30,7 +30,7 @@ a {
 }
 
 a:hover {
-  color: #da002c;
+  color: #C81133;
 }
 
 /* .hover-italic {
@@ -47,11 +47,11 @@ a:hover {
 }
 
 .cl-primary {
-  color: #da002c;
+  color: #C81133;
 }
 
 .cl-hover-primary:hover {
-  color: #da002c;
+  color: #C81133;
 }
 
 .cl-secondary {
@@ -63,11 +63,11 @@ a:hover {
 }
 
 .border-primary {
-  border: solid 2px #da002c !important;
+  border: solid 2px #C81133 !important;
 }
 
 .bg-primary {
-  background-color: #da002c !important;
+  background-color: #C81133 !important;
 }
 
 .bg-secondary {
@@ -100,7 +100,7 @@ a:hover {
 
 nav > ul > li > a::before {
   background: transparent none repeat scroll 0 0;
-  background-color: #da002c;
+  background-color: #C81133;
   bottom: -5px;
   content: '';
   height: 2px;
@@ -120,7 +120,7 @@ nav > ul > li:hover a::before {
 }
 
 nav > ul > .active {
-  background-color: #da002c;
+  background-color: #C81133;
 }
 
 nav > ul > .active > a {
