@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loop: isLoop,
     slidesPerView: 3,
     slidesPerGroup: 1,
-    spaceBetween: 70,
+    spaceBetween: 50,
     navigation: {
       nextEl: ".swiper-button-next.donor",
       prevEl: ".swiper-button-prev.donor",
