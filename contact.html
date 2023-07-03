@@ -72,6 +72,145 @@
     <!-- Template Main CSS File -->
     <link href="MyUtil.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
+    <style>
+      /* contact */
+      section.contact-us #contact {
+        border: solid #c81133 2px;
+        position: relative;
+        display: block;
+        /* width: 380px; */
+        height: auto;
+        background-color: #fff;
+        padding: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 15px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      section.contact-us .section-heading {
+        position: relative;
+        display: block;
+        margin: auto;
+      }
+
+      .section-heading h4 {
+        line-height: 40px;
+        font-size: 28px;
+        font-weight: 900;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        position: relative;
+        display: block;
+        background-color: #f4f7fb;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        border: none;
+        box-shadow: none;
+        border-radius: 25px;
+        outline-color: #9e9e9e;
+      }
+
+      input {
+        height: 40px;
+        padding: 0px 15px;
+      }
+
+      textarea {
+        min-height: 100px;
+        max-height: 140px;
+        padding: 15px;
+        resize: none;
+      }
+
+      .contact-us span {
+        /* height: 20px; */
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
+
+      .valid_info_name,
+      .valid_info_email,
+      .valid_info_message {
+        display: inline-block;
+        font-size: 13px;
+        margin: 5px 2px;
+      }
+
+      .valid {
+        border: 2px solid green;
+        outline-color: green;
+      }
+
+      .invalid {
+        border: 2px solid red;
+        outline-color: red;
+      }
+
+      .contact-btn {
+        display: inline-flex;
+        width: 100%;
+        justify-content: flex-end;
+      }
+
+      #form-submit {
+        position: relative;
+        display: inline-block;
+        float: right;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #fff;
+        background: #c81133;
+        /* background: linear-gradient(-145deg, #c81133 0%, rgba(246,191,159,1) 100%); */
+        padding: 12px 20px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s;
+        transition: all 0.3s;
+      }
+
+      #form-submit:disabled {
+        border: 1px solid #9e9e9e;
+        background: transparent;
+        color: #9e9e9e;
+        transition: none;
+        transform: none;
+        cursor: default;
+      }
+
+      #form-submit:hover:disabled {
+        border: 1px solid #9e9e9e;
+        color: #9e9e9e;
+        background: transparent;
+        transition: none;
+        transform: none;
+        cursor: default;
+      }
+
+      button:active {
+        transform: scale(0.95);
+      }
+
+      button:focus {
+        outline: none;
+      }
+
+      button.ghost {
+        background-color: transparent;
+        border-color: #ffffff;
+      }
+    </style>
   </head>
   <body>
     <div
@@ -132,7 +271,7 @@
                 </li>
               </ul>
             </li>
-            <li class="position-relative p-lr-20 p-tb-8 active">
+            <li class="position-relative p-lr-20 p-tb-8">
               <a class="unselectable position-relative cursordefault"
                 >Activities
               </a>
@@ -173,77 +312,79 @@
               </ul>
             </li>
             <li class="position-relative p-lr-20 p-tb-8">
-              <a class="unselectable position-relative" href="current-project.html">Current Projects</a>
+              <a
+                class="unselectable position-relative"
+                href="current-project.html"
+                >Current Projects</a
+              >
             </li>
-            <li class="position-relative p-lr-20 p-tb-8">
-              <a class="unselectable position-relative" href="contact.html">Contact Us</a>
+            <li class="position-relative p-lr-20 p-tb-8 active">
+              <a class="unselectable position-relative" href="contact.html"
+                >Contact Us</a
+              >
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main>
-      <section class="pb-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 justify-content-center text-center">
-              <h2 class="fs-30 py-5">Activities in Myanmar</h2>
-
-              <!-- <p class="m-tb-10 pb-3 fs-16 lh-20">Providing medical care to areas where it is currently out of reach, wherever that may be</p> -->
-
-              <div class="activity-container">
-                <div class="card">
-                  <div class="card-header">
-                    <img
-                      src="https://www.japanheart.org/wp-content/uploads/2022/01/1200_628_faceboook-1.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h4>Aid for COVID‑19</h4>
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Aspernatur tenetur distinctio neque?
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <img
-                      src="https://www.japanheart.org/wp-content/uploads/2022/08/heart_stock_01.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h4>Material support in the event of a disaster</h4>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Fugiat dolor nihil saepe. Nobis nihil minus similique hic
-                      quas mollitia. Error.
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <img
-                      src="https://www.japanheart.org/wp-content/uploads/2018/10/20181012_154824.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h4>Disaster medical support</h4>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Molestias consequuntur sequi suscipit iure fuga ea!
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
+    <main class="container">
+      <section class="contact-us p-tb-50 row" id="contact-section">
+        <div class="col-6">
+          <iframe
+            class="w-100"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.4297884647935!2d96.15678087431272!3d16.85462081793608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1934fe107a015%3A0xdaca2d9aed9c39ea!2sJapan%20Heart%20Yangon!5e0!3m2!1sen!2smm!4v1688411347680!5m2!1sen!2smm"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
+        <form id="contact" class="col-6" action="" method="post">
+          <div class="section-heading">
+            <h4 class="cl-primary">Contact us</h4>
+          </div>
+
+          <div class="inputField">
+            <input
+              type="name"
+              name="name"
+              id="name"
+              placeholder="Your name"
+              autocomplete="on"
+              required
+            />
+            <span class="valid_info_name"></span>
+          </div>
+
+          <div class="inputField">
+            <input
+              type="Email"
+              name="email"
+              id="email"
+              placeholder="Your email"
+              required=""
+            />
+            <span class="valid_info_email"></span>
+          </div>
+
+          <div class="inputField">
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your message"
+            ></textarea>
+            <span class="valid_info_message"></span>
+          </div>
+
+          <div class="inputField contact-btn">
+            <button type="submit" id="form-submit" class="main-gradient-button">
+              Send a message
+            </button>
+          </div>
+        </form>
       </section>
     </main>
 
