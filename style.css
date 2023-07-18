@@ -299,7 +299,100 @@ nav > ul > li:hover > ul {
   font-weight: 500;
   color: rgb(70, 68, 68);
 }
-
+/* Message from the Founder */
+.msgcard-body p {
+  line-height: 2.5rem;
+}
+.msgcard-body p.founder-name {
+  text-align: right;
+}
+.msgcard-img {
+  width: 400px;
+  margin: 0 20px;
+  float: right;
+}
+.founder-profile ul li {
+  line-height: 2rem;
+}
+/* History */
+.donation-card * {
+  text-align: left;
+}
+.donationcard-img {
+  width: 100%;
+  object-fit: cover;
+}
+.donation-textbox {
+  line-height: 2rem;
+}
+.monthly-donation .donation-textbox {
+  padding-left: 3rem;
+}
+.donation-title,
+.donation-subtitle {
+  font-weight: bold;
+  color: #055ead;
+}
+.donation-title {
+  font-size: 20px;
+}
+.donation-subtitle {
+  font-size: 14px;
+}
+.donate-now-btn {
+  border-radius: 30px;
+  background-color: #e5a930;
+  padding: 5px 20px;
+  color: #fff;
+}
+.donate-now-btn:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
+}
+/* Mission */
+.jpheart-title {
+  padding-bottom: 10px;
+}
+.jpheart-description .title-bar,
+.jpheart-credo .title-bar {
+  width: 6%;
+  min-width: 80px;
+  border-bottom: 5px solid #c81133;
+}
+.jpheart-description:hover,
+.jpheart-credo:hover {
+  box-shadow: 0px 5px 10px 0px rgba(62, 62, 62, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.jpheart-description:hover .title-bar,
+.jpheart-mission:hover .title-bar,
+.jpheart-credo:hover .title-bar {
+  width: 100%;
+  transition: width linear 0.3s;
+}
+.jpheart-textbox p {
+  line-height: 2.5rem;
+}
+.jpheart-mission * {
+  color: #fff;
+  line-height: 2rem;
+}
+.mission-text {
+  float: right;
+}
+.jpheart-mission .title-bar {
+  width: 6%;
+  min-width: 80px;
+  border-bottom: 5px solid #fff;
+}
+.jpheart-mission:hover {
+  box-shadow: 0px 5px 10px 0px rgba(62, 62, 62, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.jpheart-credo ul.list-mark li {
+  list-style-type: disc;
+  line-height: 2rem;
+}
 /* Current Projects */
 .projcard-container,
 .projcard-container * {
