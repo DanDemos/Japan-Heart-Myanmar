@@ -300,10 +300,17 @@ nav > ul > li:hover > ul {
   color: rgb(70, 68, 68);
 }
 /* Message from the Founder */
+.msgcard-body {
+  background-color: #c81133;
+}
 .msgcard-body p {
   line-height: 2.5rem;
+  color: #fff;
 }
-.msgcard-body p.founder-name {
+.founder-img {
+  width: 300px;
+}
+.msg-footer-name {
   text-align: right;
 }
 .msgcard-img {
@@ -311,8 +318,23 @@ nav > ul > li:hover > ul {
   margin: 0 20px;
   float: right;
 }
-.founder-profile ul li {
-  line-height: 2rem;
+.founder-info {
+  padding-top: 60px;
+}
+.founder-bio {
+  padding: 30px 0;
+}
+.founder-bio ul li {
+  line-height: 2.5rem;
+  font-size: 0.95rem;
+  letter-spacing: -0.5px;
+}
+.founder-img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+  object-fit: contain;
 }
 /* History */
 .history-container {
