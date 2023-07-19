@@ -456,6 +456,12 @@ nav > ul > li:hover > ul {
   list-style-type: disc;
   line-height: 2rem;
 }
+.jpheart-img img,
+.jpheart-mission img {
+  width: 100%;
+  max-width: 400px;
+  object-fit: contain;
+}
 /* Current Projects */
 .projcard-container,
 .projcard-container * {
