@@ -713,60 +713,50 @@ nav > ul > li:hover > ul {
   top: 0;
 }
 
+.masonary-grid img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .masonary-grid {
-  /* background: yellow; */
+  counter-reset: step;
   display: grid;
-  height: 100vh;
-  padding:0.5em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 10rem);
+  gap: var(--marge);
+  padding: var(--marge);
 }
-
-.masonary-container {
-  /* background: black; */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(24, 1fr);
-  grid-auto-flow: column dense;
-  max-height: 100%;
-  max-width: 100%;
-  aspect-ratio: 1 / 0.88;
-  gap: 5px;
-  padding: 2vmin;
-  margin: auto;
-  border-radius: 10px;
+.masonary-grid .box1,
+.masonary-grid .box3 {
+  grid-row: 1/2;
 }
-
-.masonary-container img {
-  max-height: 100%;
-  max-width: 100%;
-  box-shadow: 0 0 0 1px white;
-  border-radius: 5px;
-  display: block;
+.masonary-grid .box2,
+.masonary-grid .box4 {
+  grid-row: 1/3;
 }
-.masonary-container img:nth-child(1) {
-  grid-row: 1 / span 17;
-  grid-column: 1;
+.masonary-grid .box5,
+.masonary-grid .box7 {
+  grid-row: 2/4;
 }
-.masonary-container img:nth-child(2) {
-  grid-row: 18 / span 8;
-  grid-column: 1;
+.masonary-grid .box {
+  counter-increment: step;
+  position: relative;
 }
-.masonary-container img:nth-child(3) {
-  grid-row: 1 / span 12;
-  grid-column: 2;
-}
-.masonary-container img:nth-child(4) {
-  grid-row: 13 / span 12;
-  grid-column: 2;
-}
-.masonary-container img:nth-child(5) {
-  grid-row: 1 / span 8;
-  grid-column: 3;
-}
-.masonary-container img:nth-child(6) {
-  grid-row: 9 / span 8;
-  grid-column: 3;
-}
-.masonary-container img:nth-child(7) {
-  grid-row: 17 / span 8;
-  grid-column: 3;
+.masonary-grid .box::after {
+  /* display: grid;
+  justify-content: center;
+  align-content: center;
+  background: var(--color-first);
+  width: var(--bullet-size);
+  height: var(--bullet-size);
+  border-radius: 2rem;
+  content: counter(step) "";
+  position: absolute;
+  inset-inline-start: 1rem;
+  inset-block-start: 1rem; */
+  /* background: yellow;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px; */
 }
