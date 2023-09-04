@@ -760,3 +760,110 @@ nav > ul > li:hover > ul {
   width: 20px;
   height: 20px; */
 }
+
+.donation-modal-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+  width: 100%;
+  padding: 30px 20px;
+  border-radius: 24px;
+  background-color: #fff;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.donation-modal-box i {
+  font-size: 70px;
+  color: #c81133;
+}
+.donation-modal-box h2 {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #333;
+}
+.donation-modal-box h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
+.donation-modal-box .buttons {
+  margin-top: 25px;
+}
+.donation-modal-box button {
+  font-size: 14px;
+  padding: 6px 12px;
+  margin: 0 10px;
+
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  background: #c81133;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.donation-modal-box button:hover {
+background-color: #a80c29;
+}
+
+.select-menu{
+  width: 380px;
+  /* margin: 140px auto; */
+}
+.select-menu .select-btn{
+  display: flex;
+  height: 55px;
+  background: #fff;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.select-btn i{
+  font-size: 25px;
+  transition: 0.3s;
+}
+.select-menu.active .select-btn i{
+  transform: rotate(-180deg);
+}
+.select-menu .options{
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
+  display: none;
+}
+.select-menu.active .options{
+  display: block;
+}
+.options .option{
+  display: flex;
+  height: 55px;
+  cursor: pointer;
+  padding: 0 16px;
+  border-radius: 8px;
+  align-items: center;
+  background: #fff;
+  position: relative;
+}
+.options .option:hover{
+  background: #F2F2F2;
+}
+.option i{
+  font-size: 25px;
+  margin-right: 12px;
+}
+.option .option-text{
+  font-size: 18px;
+  color: #333;
+}
