@@ -1002,7 +1002,8 @@ nav > ul > li:hover > ul {
 
 @media screen and (min-width: 66.25em) {
   .pricing-palden .pricing-item {
-      margin: 1em -0.5em;
+      /* margin: 1em -0.5em; */
+      margin: 1em 0em;
   }
   .pricing-palden .pricing__item--featured {
       margin: 0;
@@ -1087,7 +1088,10 @@ nav > ul > li:hover > ul {
 }
 
 .pricing-palden .pricing-feature {
-  padding: 1em 10px;
+  padding-top: 0px;
+  padding-bottom: 1em;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .pricing-palden .pricing-action {
