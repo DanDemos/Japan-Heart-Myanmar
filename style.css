@@ -333,15 +333,190 @@ nav > ul > li:hover > ul {
   padding: 2px 10px;
   text-transform: uppercase;
 }
-.card-body h4 {
-  margin: 10px 0;
+
+.activities-section{
+  margin-bottom: 70px;
+  margin-top: 50px;
 }
-.card-body p {
-  font-size: 14px;
-  margin: 0 0 40px 0;
-  font-weight: 500;
-  color: rgb(70, 68, 68);
+
+.first{
+  margin-top: 0;
 }
+
+@media (max-width:991px){
+  .activities-section{
+    margin-bottom: 40px;
+    margin-top: 30px;
+  }
+  
+}
+
+
+.line{
+  width: 100%;
+  height: 0.5px;
+  /* background: rgba(44,103,108,1); */
+  background: #c81133;
+}
+
+
+
+.act-education-card{
+  padding: 30px 20px;
+  border-radius: 10px; 
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background: rgba(44,103,108,0.1); */
+  background: #fff;
+}
+.act-education-card img{
+  width: 100%;
+  height: auto;
+}
+
+.image-width{
+  width: 100%;
+  height: auto;
+}
+
+.act-img-con{
+  position: relative;
+  overflow: hidden;
+  /* width: 100%; */
+}
+.square-1{
+  content: '';
+  width: 180px;
+  height: 180px;
+  background: #c81133;
+  border-radius: 50%;
+  position: absolute;
+  top: -46px;
+  left: -46px;
+  z-index: 0;
+  transition: all .6s ease-in-out;
+  border-bottom-right-radius: 100%;
+}
+
+.act-img-con img{
+  margin-top: 10px;
+  margin-left: -2px;
+}
+.act-education-card:hover{
+  transform: translate(0,-10px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all .6s ease-in-out;
+}
+.act-education-card:hover .act-img-con .square-1{
+  width: 220px;
+  height: 220px;
+}
+
+@media (max-width:767px){
+  .act-education-card:nth-child(odd){
+    flex-direction: column-reverse !important;
+  }
+  .act-education-card .act-description{
+    margin-top: 20px;
+  }
+}
+
+.act-title {
+  font-size: 24px;
+}
+
+.act-description{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.summary-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(200, 17, 51, 1);
+  padding: 30px 0;
+  margin-top: 30px;
+}
+
+.summary-container .summary-description,
+.medicat-p-con{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  
+}
+
+.summary-container .summary-description p{
+  font-size: 16px;
+  color: #fff;
+}
+
+.medicat-p-con p{
+  font-size: 16px;
+}
+
+.medical-row{
+  align-items: center;
+  row-gap: 30px;
+}
+.medical-row p{
+  font-size: 16px;
+  margin-top: 16px;
+}
+.medical-row ol li{
+  list-style-type: decimal;
+}
+.medical-row ul{
+  padding-left: 0;
+}
+.medical-row ul li,.medical-row :only-of-type li{
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.medical-row ul li ul{
+  padding-left: 2rem;
+}
+.medical-row ul li::before {
+  content: '✔';
+  font-size: 15px;
+  color: #c81133;
+  line-height: 1.7;
+  padding-right: 10px;
+}
+.medical-row ul li ul li::before{
+  content: '🔹';
+  font-size: 15px;
+  color: #2C676C;
+  line-height: 1.7;
+  padding-right: 10px;
+}
+
+.new-hospital-con{
+  width: 100%;
+  background: #fff;
+  padding: 30px;
+}
+
+.title-line{
+  margin-top: 5px;
+  width: 10%;
+  height: 3px;
+  background: #c81133;
+}
+
+.new-hospital-con:hover{
+box-shadow: 0px 5px 10px 0px rgba(62, 62, 62, 0.5);
+}
+
+.new-hospital-con:hover .title-line{
+  width: 100%;
+}
+
 /* Message from the Founder */
 .msgcard-body {
   background-color: #c81133;

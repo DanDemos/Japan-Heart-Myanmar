@@ -72,156 +72,6 @@
     <!-- Template Main CSS File -->
     <link href="MyUtil.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
-    <style>
-      /* contact */
-      section.contact-us #contact {
-        border: solid #c81133 2px;
-        position: relative;
-        display: block;
-        /* width: 380px; */
-        height: auto;
-        background-color: #fff;
-        padding: 25px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 15px;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
-      }
-
-      section.contact-us .section-heading {
-        position: relative;
-        display: block;
-        margin: auto;
-      }
-
-      .section-heading h4 {
-        line-height: 40px;
-        font-size: 28px;
-        font-weight: 900;
-        text-align: center;
-        text-transform: uppercase;
-        margin-bottom: 40px;
-      }
-
-      input,
-      textarea {
-        width: 100%;
-        position: relative;
-        display: block;
-        background-color: #f4f7fb;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 12px;
-        font-weight: 500;
-        border: none;
-        box-shadow: none;
-        border-radius: 25px;
-        outline-color: #9e9e9e;
-      }
-      input:focus {
-        border-color: #86b7fe;
-        outline: 0;
-        box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
-      }
-      textarea:focus {
-        border-color: #86b7fe;
-        outline: 0;
-        box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
-      }
-
-
-      input {
-        height: 40px;
-        padding: 0px 15px;
-      }
-
-      textarea {
-        min-height: 100px;
-        max-height: 140px;
-        padding: 15px;
-        resize: none;
-      }
-
-      .contact-us span {
-        /* height: 20px; */
-        font-size: 12px;
-        margin-bottom: 20px;
-      }
-
-      .valid_info_name,
-      .valid_info_email,
-      .valid_info_message {
-        display: inline-block;
-        font-size: 13px;
-        margin: 5px 2px;
-      }
-
-      .valid {
-        border: 2px solid green;
-        outline-color: green;
-      }
-
-      .invalid {
-        border: 2px solid red;
-        outline-color: red;
-      }
-
-      .contact-btn {
-        display: inline-flex;
-        width: 100%;
-        justify-content: flex-end;
-      }
-
-      #form-submit {
-        position: relative;
-        display: inline-block;
-        float: right;
-        font-size: 12px;
-        font-weight: bold;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: #fff;
-        background: #c81133;
-        /* background: linear-gradient(-145deg, #c81133 0%, rgba(246,191,159,1) 100%); */
-        padding: 12px 20px;
-        border-radius: 5px;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        transition: all 0.3s;
-        transition: all 0.3s;
-      }
-
-      #form-submit:disabled {
-        border: 1px solid #9e9e9e;
-        background: transparent;
-        color: #9e9e9e;
-        transition: none;
-        transform: none;
-        cursor: default;
-      }
-
-      #form-submit:hover:disabled {
-        border: 1px solid #9e9e9e;
-        color: #9e9e9e;
-        background: transparent;
-        transition: none;
-        transform: none;
-        cursor: default;
-      }
-
-      button:active {
-        transform: scale(0.95);
-      }
-
-      button:focus {
-        outline: none;
-      }
-
-      button.ghost {
-        background-color: transparent;
-        border-color: #ffffff;
-      }
-    </style>
   </head>
   <body>
     <div
@@ -282,7 +132,7 @@
                 </li>
               </ul>
             </li>
-            <li class="position-relative p-lr-20 p-tb-8">
+            <li class="position-relative p-lr-20 p-tb-8 active">
               <a class="unselectable position-relative cursordefault"
                 >Activities
               </a>
@@ -290,8 +140,7 @@
                 class="d-block position-absolute start-0 m-0 px-auto py-2 unselectable z-3"
               >
                 <li>
-                  <a class="d-block p-tb-8" href="medical-activities.html"
-                    >Medical Activities</a
+                  <a class="d-block p-tb-8" href="medical-activities.html">Medical Activities</a
                   >
                 </li>
                 <li>
@@ -323,16 +172,10 @@
               </ul>
             </li>
             <li class="position-relative p-lr-20 p-tb-8">
-              <a
-                class="unselectable position-relative"
-                href="current-project.html"
-                >Current Projects</a
-              >
+              <a class="unselectable position-relative" href="current-project.html">Current Projects</a>
             </li>
-            <li class="position-relative p-lr-20 p-tb-8 active">
-              <a class="unselectable position-relative" href="contact.html"
-                >Contact Us</a
-              >
+            <li class="position-relative p-lr-20 p-tb-8">
+              <a class="unselectable position-relative" href="contact.html">Contact Us</a>
             </li>
           </ul>
 
@@ -376,63 +219,94 @@
       </div>
     </header>
 
-    <main class="container">
-      <section class="contact-us p-tb-50 row" id="contact-section">
-        <div class="col-6">
-          <iframe
-            class="w-100"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.4297884647935!2d96.15678087431272!3d16.85462081793608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1934fe107a015%3A0xdaca2d9aed9c39ea!2sJapan%20Heart%20Yangon!5e0!3m2!1sen!2smm!4v1688411347680!5m2!1sen!2smm"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+    <main>
+      <section class="pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 justify-content-center">
+              <h2 class="fs-30 py-5 text-center">Educational Support</h2>
+              <!-- Education -->
+              <section class="activities-section first">
+                <h3 class="text-left mb-3 act-title">Education</h3>
+                <div class="row act-education-card">
+                  <div class="col-12 col-md-6 act-img-con">
+                    <div class="square-1"></div>
+                    <img src="./images/dream.png" alt="dream"/>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <p class="act-description">
+                      <span class="fs-40 lh-1">M</span>ost of the children who live in the Dream Train Youth Development Charity Center are attending the Government of Basic Education Primary School, Middle school, High school and Private Schools in Yangon and learning the Primary, Secondary and Higher education. 46 children have passed the university entrance exam.
+                    </p>
+                  </div>
+                </div>
+                <div class="row act-education-card">
+                  <div class="col-12 col-md-6">
+                    <p class="act-description">
+                      <span class="fs-40 lh-1">H</span>andicrafts, such as Table Cloth, Handkerchief, Hand Chain, Key Chain, Purses and Pillowcases are taught to children during the summer holidays by a teacher at the Dreaming Train. Children are also interested and they learn with joy and care and the visitors are encouraged to buy the handicrafts made by the children.
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-6 act-img-con">
+                    <div class="square-1"></div>
+                    <img src="./images/handicrafts.png" alt="handicrafts"/>
+                  </div>
+                </div>       
+              </section>
+              <div class="line"></div> 
+              
+              <!-- Library -->
+              
+              <section class="activities-section">                
+                <h3 class="text-left mb-3 act-title">Library</h3> 
+                <div class="row mb-4">
+                  <div class="col-6 act-img-con">
+                    <div class="square-1"></div>
+                    <img src="./images/library.png" class="image-width" alt="Library"/> 
+                  </div>
+                  <div class="col-6 act-img-con">
+                    <div class="square-1"></div>
+                    <img src="./images/dream-train.jpg" class="image-width" alt="Library Train"/> 
+                  </div>
+                </div>
+                <p class="act-description">The library at the Dream Train Youth Development Charity Center was established in January 2017 with a donation from the Bill Cook Foundation and Hirokei.</p>
+                <p class="act-description">There are non-fiction books, fiction books, magazines, cartoons and religious literature.</p> 
+                <p class="act-description">There are about 2000 books.</p>
+                <p class="act-description">In every Sunday the children go to the library for reading books and rent it.</p>
+              </section>
+              <div class="line"></div> 
+
+              <!-- Activities -->
+              <section class="activities-section">
+                <h3 class="text-left mb-3 act-title">Activities</h3>
+                <div class="row act-education-card">
+                  <div class="col-12 col-md-6 act-img-con">
+                    <div class="square-1"></div>
+                    <img src="./images/activities.png" alt="Activities"/>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <p class="act-description">
+                      <span class="fs-40 lh-1">T</span>here are Swimming Class, Yoga Class, Hip Hop Dance Class, Piano Class, Reading Class, Crocheting Class, Rugby Class, Football Class, Learning Science from Japanese Teacher by Online, Flute Class and Language Classes are making in Dream Train.
+                    </p>
+                  </div>
+                </div>
+              </section>
+              <div class="line"></div> 
+            </div>
+          </div>
         </div>
-        <form id="contact" class="col-6" action="" method="post">
-          <div class="section-heading">
-            <h4 class="cl-primary">Contact us</h4>
+        <!-- Summary -->
+        <h2 class="fs-30 w-100 d-flex justify-content-center mt-4">Summary</h2>
+        <div class="summary-container">
+          <div class="container">
+            <div class="summary-description">
+              <p>Dream Train Child Development Centre was Established on 29th September, 2011 by the help of “Japan Heart” and it is located on No.270/271, Aung Dagun St., Ward 48, North Dagon Township, Yangon, Myanmar.</p>
+              <p>Our expectation is to help and reach out to children who are facing problems with food, clothing, shelter, education, health care and other social problems with a spirit of humanity and compassion without discrimination of any race, religion, blood and skin colour in accordance with the well-known sayings “ HELP THE WEAK”.</p>
+              <p>All the children joining the centre are expected to overcome all the problems of daily necessity of food, clothing, shelter, health and social problems to become independent in life after getting basic education, a suitable vocational training and higher education.</p>
+              <p>There were 28 children at the time of the establishment of the Dream Train Center. At this time, there are (142) students and every year, students who outstanding in academics and sports are emerging.</p>
+              <p>We would like to express our special thanks to the donors from local and foreign who give from all sides every months and every years.
+              </p>
+            </div>
           </div>
-
-          <div class="inputField">
-            <input
-              type="name"
-              name="name"
-              id="name"
-              placeholder="Your name"
-              autocomplete="on"
-              required
-            />
-            <span class="valid_info_name"></span>
-          </div>
-
-          <div class="inputField">
-            <input
-              type="Email"
-              name="email"
-              id="email"
-              placeholder="Your email"
-              required=""
-            />
-            <span class="valid_info_email"></span>
-          </div>
-
-          <div class="inputField">
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Your message"
-            ></textarea>
-            <span class="valid_info_message"></span>
-          </div>
-
-          <div class="inputField contact-btn">
-            <button type="submit" id="form-submit" class="main-gradient-button">
-              Send a message
-            </button>
-          </div>
-        </form>
+        </div>
       </section>
     </main>
 
