@@ -474,20 +474,42 @@ nav > ul > li:hover > ul {
 .medical-row ul{
   padding-left: 0;
 }
-.medical-row ul li,.medical-row :only-of-type li{
+.medical-row ul li,
+.medical-row :only-of-type li{
   font-size: 16px;
   margin-bottom: 5px;
 }
-.medical-row ul li ul{
+
+.social-container ul li,.social-container p{
+  font-size: 16px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+.donation-description ul li{
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.medical-row ul li ul,.social-container p{
   padding-left: 2rem;
 }
-.medical-row ul li::before {
+
+/* .social-container ul li:nth-child(odd){
+  background: #fff;
+}
+.social-container ul li:nth-child(even){
+  background: rgba(200, 17, 51, 0.2);
+} */
+
+.medical-row ul li::before,
+.social-container ul li:before,
+.donation-description ul li:before {
   content: '✔';
   font-size: 15px;
   color: #c81133;
   line-height: 1.7;
   padding-right: 10px;
 }
+
 .medical-row ul li ul li::before{
   content: '🔹';
   font-size: 15px;
@@ -510,11 +532,149 @@ nav > ul > li:hover > ul {
 }
 
 .new-hospital-con:hover{
+  border-radius: 10px;
 box-shadow: 0px 5px 10px 0px rgba(62, 62, 62, 0.5);
 }
 
 .new-hospital-con:hover .title-line{
   width: 100%;
+}
+
+.social-detail-con{
+  margin-bottom: 150px;
+}
+
+
+
+/* social slider card */
+.social{
+  /* position: relative;   */
+  /* overflow: hidden; */
+}
+
+.social-card{
+  overflow: hidden;
+}
+
+.social-card img{
+  width: 100%;
+  max-height: 300px;
+  transform: translate(10px,10px);
+}
+.social-card:hover {
+  transform: translate(0,-10px);
+  box-shadow: 0px 5px 10px 0px rgba(62, 62, 62, 0.5);
+  transition: all .4s ease-in-out;
+}
+
+.social-card:hover .square-1{
+  width: 220px;
+  height: 220px;
+}
+
+.social .swiper-pagination-bullet{
+  background: #c81133;
+}
+
+.social .swiper-button-next::after
+,.social .swiper-button-prev::after{
+  font-size: 20px !important;
+  color: #c81133 !important;
+}
+
+.social-title-img-con{
+  position: relative;
+}
+.social-title-img-con .first-img,
+.social-title-img-con .second-img{
+  box-shadow: 0px 5px 10px 0px rgba(62, 62, 62, 0.5); 
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+.social-title-img-con .first-img:hover,
+.social-title-img-con .second-img:hover{
+ z-index: 1;
+ border: 2px solid #c81133;
+ transition: all .6s ease-in;
+}
+.social-title-img-con .second-img{
+  /* position: absolute; */
+  transform: translate(30%,-30%);
+}
+.social-title-img-con .second-img:hover{
+  transform: translate(30%,-35%);
+  transition: all .6s ease-in;
+}
+
+.text-area{
+  width: 100%;
+}
+.text-area .vertical-left{
+  width: 2px;
+  height: 100%;
+  background: #c81133;
+  position: absolute;
+  left: 1rem;
+  top: 20px;
+}
+.text-area p{
+  margin-bottom: 0;
+}
+
+ul li .title{
+  font-size: 20px;
+  color: #c81133;
+}
+
+.social-p{
+  border: 2px solid #c81133;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 5px 10px 0px rgba(62, 62, 62, 0.5);
+}
+
+.social-p p{
+  font-size: 16px;
+}
+
+.social-p:hover{
+  transform: translate(0, -10px);
+  transition: all .6s ease-in;
+}
+
+.thank{
+  color: #c81133;
+}
+
+/* Social Table */
+.social-table-container table{
+  background: #c81133;
+  border-radius: 7px;
+}
+.social-table-container table tbody tr,
+.social-table-container table tbody tr td{
+  border: 1px solid #fff;
+  color: #fff;
+  vertical-align: text-top;
+}
+.social-table-container table tbody tr td{
+  padding: 15px 15px;
+}
+.social-table-container table tbody tr td ol{
+  padding-left: 1rem;
+}
+.social-table-container table tbody tr td ol li{
+  list-style-type: unset;
+}
+.social-table-container table tbody tr td:nth-child(1){
+  width: 5%;
+  text-align: center;
+}
+.social-table-container table tbody tr td:nth-child(2){
+  width: 20%;
+}
+.social-table-container table tbody tr td:nth-child(3){
+  width: 75%;
 }
 
 /* Message from the Founder */
