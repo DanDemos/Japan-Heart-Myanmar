@@ -40,6 +40,26 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
+  // Swiper for social detail
+  if ($('.swiper-social .swiper-slide').length < 3) {
+    isLoop = false;
+  }
+
+  const swiper_social = new Swiper(".swiper-social", {
+    loop: isLoop,
+    slidesPerView: 3,
+    slidesPerGroup: 1,
+    spaceBetween: 50,
+    navigation: {
+      nextEl: ".swiper-button-next.social",
+      prevEl: ".swiper-button-prev.social",
+    },
+    pagination: {
+      el: ".swiper-pagination.social",
+      clickable: true,
+    },
+  });
+
   const homeSliderTexts = document.querySelectorAll(".home.swiper-slide .row .col-8.d-flex.flex-column.justify-content-center p")
   homeSliderTexts.forEach(homeSliderText => {
     if (homeSliderText.innerHTML) {
