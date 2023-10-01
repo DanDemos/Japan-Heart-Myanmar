@@ -486,9 +486,15 @@ nav > ul > li:hover > ul {
   margin-bottom: 15px;
   padding: 10px;
 }
-.donation-description ul li{
+.donation-description ul li,
+.fund-list ul li{
   font-size: 16px;
   margin-bottom: 15px;
+}
+
+.fund-list ul li{
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 .medical-row ul li ul,.social-container p{
   padding-left: 2rem;
@@ -503,7 +509,8 @@ nav > ul > li:hover > ul {
 
 .medical-row ul li::before,
 .social-container ul li:before,
-.donation-description ul li:before {
+.donation-description ul li:before,
+.fund-list ul li:before {
   content: '✔';
   font-size: 15px;
   color: #c81133;
@@ -1387,6 +1394,10 @@ ul li .title{
   margin: 1em;
 }
 
+.pricing-palden img{
+  max-width: 80px;
+}
+
 @media screen and (min-width: 66.25em) {
   .pricing-palden .pricing-item {
       /* margin: 1em -0.5em; */
@@ -1442,7 +1453,7 @@ ul li .title{
 }
 
 .pricing-palden .pricing-price {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
   padding: 0;
   color: #fff;
