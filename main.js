@@ -40,6 +40,41 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
+  // Swiper for social detail
+  var socialPreview=3
+
+  if(window.innerWidth > 992){
+    socialPreview=3
+    console.log('socialPreview',socialPreview)
+  }
+  else if(window.innerWidth > 769){
+    socialPreview=2
+    console.log('socialPreview',socialPreview)
+  }
+  else{
+    socialPreview=1
+    console.log('socialPreview',socialPreview)
+  }
+
+  if ($('.swiper-social .swiper-slide').length < 3) {
+    isLoop = false;
+  }
+
+  const swiper_social = new Swiper(".swiper-social", {
+    loop: isLoop,
+    slidesPerView: socialPreview,
+    slidesPerGroup: 1,
+    spaceBetween: 50,
+    navigation: {
+      nextEl: ".swiper-button-next.social",
+      prevEl: ".swiper-button-prev.social",
+    },
+    pagination: {
+      el: ".swiper-pagination.social",
+      clickable: true,
+    },
+  });
+
   const homeSliderTexts = document.querySelectorAll(".home.swiper-slide .row .col-8.d-flex.flex-column.justify-content-center p")
   homeSliderTexts.forEach(homeSliderText => {
     if (homeSliderText.innerHTML) {

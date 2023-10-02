@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Template</title>
+
+    <!-- Favicons -->
+    <link href="images/fav-icon.jpg" rel="icon" />
+    <link href="images/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- CSS only -->
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link href="" rel="stylesheet" />
+    <!-- https://fonts.googleapis.com -->
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script> -->
+
+    <!-- Material Design Iconic Font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+    />
+
+    <!-- Glightbox -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.css"
+    />
+    <!-- A touchable Pure Javascript lightbox with mobile and video support. -->
+
+    <!-- Splitting -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting.css"
+    />
+    <!-- Splitting create elements and adds CSS variables to unlock amazing possibilities for animating text, grids, and more! -->
+
+    <!-- Datatable -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.12.0/css/jquery.dataTables.min.css"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="MyUtil.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      class="d-none flex-column bg-black justify-content-center position-fixed w-100 h-100 top-0 left-0 text-center opacity-100 z-10"
+    >
+      <div class="logo">
+        <img src="images/logo1.png" alt="" class="width-200 unselectable" />
+      </div>
+
+      <div class="d-flex flex-column align-items-center m-t-30"></div>
+    </div>
+
+    <!-- ======= Top Bar ======= -->
+    <!-- <section id="topbar" class="d-flex justify-content-between align-items-center bg-black">
+		<div class=""></div>
+		<marquee id="headerplay" behavior="sliding" direction="left" scrollamount="10" loop="-1">
+			Hello World	Hello World	Hello World	Hello World	Hello World	Hello World	Hello World	Hello World	Hello World
+		</marquee>
+		<div class=""></div>
+	</section> -->
+
+    <!-- ======= Header ======= -->
+    <header class="d-flex align-items-center bg-white">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div>
+          <a href="/"
+            ><img
+              src="images/logo1.png"
+              alt=""
+              class="p-0 m-0 unselectable"
+              height="40"
+          /></a>
+        </div>
+
+        <nav class="p-tb-20 d-flex">
+          <ul
+            class="position-relative d-flex align-items-center justify-content-between"
+          >
+            <li class="position-relative p-lr-20 p-tb-8">
+              <a class="unselectable position-relative" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="position-relative p-lr-20 p-tb-8">
+              <a class="unselectable position-relative cursordefault"
+                ><span>About Us</span></a
+              >
+              <ul
+                class="d-block position-absolute start-0 m-0 px-auto py-2 unselectable z-3"
+              >
+                <li>
+                  <a class="d-block p-tb-8" href="founder-message.html">Message from founder</a>
+                </li>
+                <li><a class="d-block p-tb-8" href="history.html">History</a></li>
+                <li><a class="d-block p-tb-8" href="about-us.html">About Us</a></li>
+                <li>
+                  <a class="d-block p-tb-8" href="organization-chart.html">Organization chart</a>
+                </li>
+              </ul>
+            </li>
+            <li class="position-relative p-lr-20 p-tb-8 active">
+              <a class="unselectable position-relative cursordefault"
+                >Activities
+              </a>
+              <ul
+                class="d-block position-absolute start-0 m-0 px-auto py-2 unselectable z-3"
+              >
+                <li>
+                  <a class="d-block p-tb-8" href="medical-activities.html">Medical Activities</a
+                  >
+                </li>
+                <li>
+                  <a class="d-block p-tb-8" href="education-activities.html">Educational support</a>
+                </li>
+                <li>
+                  <a class="d-block p-tb-8" href="social-activities.html"
+                    >Supporting social indepedence</a
+                  >
+                </li>
+                <li>
+                  <a class="d-block p-tb-8" href="new-activities.html">New Hospital Project</a>
+                </li>
+              </ul>
+            </li>
+            <li class="position-relative p-lr-20 p-tb-8">
+              <a class="unselectable position-relative cursordefault"
+                >Get involved</a
+              >
+              <ul
+                class="d-block position-absolute start-0 m-0 px-auto py-2 unselectable z-3"
+              >
+                <li>
+                  <a class="d-block p-tb-8" href="individual-support.html">Individual Support</a>
+                </li>
+                <li><a class="d-block p-tb-8" href="corporate-support.html">Corporate Support</a></li>
+                <li><a class="d-block p-tb-8" href="ways-to-get-involved.html">Ways to Get Involved</a></li>
+                <li><a class="d-block p-tb-8" href="support-us.html">Support Us</a></li>
+              </ul>
+            </li>
+            <li class="position-relative p-lr-20 p-tb-8">
+              <a class="unselectable position-relative" href="current-project.html">Current Projects</a>
+            </li>
+            <li class="position-relative p-lr-20 p-tb-8">
+              <a class="unselectable position-relative" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="dropdown p-lr-12">
+            <button
+              class="dropdown-toggle parallelogram p-all-10 width-50 d-flex justify-content-center align-items-center show"
+              style="padding-bottom: 11px"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              id="languagechange"
+            >
+              <div class="selected-dropdownimg">
+                <img
+                  src="images/united-kingdom.png"
+                  alt="lang"
+                />
+              </div>
+            </button>
+            <div
+              class="dropdown-menu min-w-65"
+              style="background: rgb(59, 55, 53)"
+            >
+              <div>
+                <a
+                  class="dropdown-item txt-center"
+                  href=""
+                  ><img class="flagIcon" src="images/united-kingdom.png" alt=""
+                /></a>
+              </div>
+              <div>
+                <a
+                  class="dropdown-item txt-center"
+                  href=""
+                  ><img class="flagIcon" src="images/myanmar.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 justify-content-center">
+                <h2 class="fs-30 py-5 text-center">Medical Activities</h2>
+                <h3 class="text-left act-title">Short Summary of Wachet Hospital Activities</h3>
+                <h3 class="text-left mt-3">Wachet Hospital and Japan Heart</h3>
+                <div class="medicat-p-con mt-3">
+                    <p>Wachet Charity Hospital is as an Origin of Japan Heart as medical activities of Japan Heart were established in this hospital since May 2004. It is located in Wachet Village on Sagaing-Mingun Road, Sagaing Division which is in upper central Myanmar.</p>
+                    <p>Although the hospital’s capacity is a 25-bedded hospital, it can accommodate up to 200 patients in its busy days. It was initially built for Sangha (Monk) community, however, later changed to a charity hospital for the public. Japan Heart is an international medical volunteer team which is collaborating with this hospital. </p>
+                </div>
+
+                <section class="activities-section">
+                    <div class="row medical-row">
+                    <div class="col-12 col-lg-6">
+                        <img src="./images/medical1.jpg" class="img-fluid" alt="Medical 1"/>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <h3 class="text-left">Japan Heart’s Inside Hospital Activities</h3>
+                        <ul class="mt-3">
+                            <li>General practice on daily basis at out-patient department</li>
+                            <li>Monthly surgical missions visited by Dr. Yoshioka</li>
+                            <li>Other specialist operations</li>
+                            <li>Medical education and training local healthcare professionals</li>
+                        </ul>
+                    </div>
+                    </div>
+                </section>
+
+                <section class="activities-section">
+                    <div class="row medical-row">
+                        <div class="col-12 col-lg-6">
+                        <img src="./images/medical2.jpg" class="img-fluid" alt="Medical 1"/>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <h3>Japan Heart’s Other Medical Activities</h3>
+                            <ul class="mt-3">
+                                <li>
+                                    Mobile Clinics and Medical Tour
+                                    <ul>
+                                        <li>To many remote areas in Myanmar Short-term period (3– 5 days)</li>
+                                        <li>General practice care at Charity Eye Care Hospitals which are operated by Mingun Tipidaka Sayadaw by monthly visits to Htee Saung and Ywangan Hospitals since 2019</li>
+                                    </ul>
+                                </li>
+                                <li>Basic Life Support (BLS) Courses</li>
+                                <li>Performing medical check-up at many monastic education centers</li>
+                            </ul>
+                        </div>
+                    </div>      
+                </section>
+
+                <section class="activities-section">
+                    <div class="row medical-row">
+                        <div class="col-12 col-lg-6">
+                            <img src="./images/medical3.jpg" class="img-fluid" alt="Medical 1"/>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <h3>In collaboration with regional tertiary teaching hospitals,</h3>
+                            <p>Japanese medical professionals teams were invited through Japan Heart and assisted in joint specific surgeries at teaching hospitals.</p>
+                            <p>The joint operations are as follow.</p>
+                            <ul class="mt-3">
+                                <li>Cleft Lip and Palate Repair</li>
+                                <li>Pediatric Urosurgery</li>
+                                <li>Paediatric Cardiac Surgery </li>
+                                <li>Pediatric Hepatobiliary Surgery</li>
+                                <li>Orthopaedic Surgery</li>
+                            </ul>
+                        </div>
+                    </div>      
+                </section>
+            </div> 
+         </div> 
+      </section>          
+    </main>
+
+    <footer id="footer">
+      <div class="footer-top unselectable">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Japan Heart</h4>
+              <ul id="footer-contact">
+                <li>
+                  <i class="bx bx-chevron-right"></i> Yangon Office Address: No.
+                  (46) Wireless Lane (2), Yay Kuu Ywar Ma Taung Paing Street,
+                  (9) Quarter, Kabaraye Pagoda Road, Mayangone Township, Yangon,
+                  Myanmar
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> Phone Number:
+                  <a class="cl-primary" href="tel:+95 95068630">
+                    +95 95068630</a
+                  >
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> Email address: <a></a>
+                  <a
+                    class="cl-primary"
+                    href="mailto:contact2jhmyanmar@gmail.com"
+                  >
+                    contact2jhmyanmar@gmail.com</a
+                  >
+                </li>
+
+                <li class="footer-img">
+                  <img src="images/2018-awards-200.jpg" alt="" />
+                </li>
+
+                <li>
+                  Winner of the 2020 UN Inter-Agency Task Force on the
+                  Prevention and Control of Non-communicable Diseases (UNIATF)
+                  awards
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-6 footer-links">
+              <h4>Pages</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="https://www.myanmarpolestar.com">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="https://www.myanmarpolestar.com/destination"
+                    >AboutUs</a
+                  >
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="https://www.myanmarpolestar.com/blogs">Projects</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="https://www.myanmarpolestar.com/blogs">Donate</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="https://www.myanmarpolestar.com/blogs">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h4 class="text-center">Social Networks</h4>
+          <div class="social-links row justify-content-center">
+            <div class="d-flex justify-content-between" style="width: 170px">
+              <a
+                href="https://www.youtube.com/channel/UCOWXAE5cXMeVcAz6GiEZ6Qw"
+                target="_blank"
+                class="youtube"
+                ><i class="fab fa-facebook-square fs-36"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/dan-demo-aba827218/"
+                target="_blank"
+                class="linkedin"
+                ><i class="fab fa-instagram fs-36"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/dan-demo-aba827218/"
+                target="_blank"
+                class="linkedin"
+                ><i class="fab fa-twitter-square fs-36"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/dan-demo-aba827218/"
+                target="_blank"
+                class="linkedin"
+                ><i class="fab fa-youtube-square fs-36"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright unselectable">
+          © Copyright <a href="" class="cl-primary">Japan Heart</a> Powered by
+          <strong><span>Hello World</span></strong>
+        </div>
+        <div class="credits"></div>
+      </div>
+    </footer>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!--Swiper is the most modern free mobile touch slider. -->
+
+    <!-- Glightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+    <!-- A touchable Pure Javascript lightbox with mobile and video support. -->
+
+    <!-- Splitting -->
+     <!-- <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script> -->
+    <!-- Splitting create elements and adds CSS variables to unlock amazing possibilities for animating text, grids, and more! -->
+
+    <!-- Main Js -->
+    <script src="main.js"></script>
+  </body>
+</html>

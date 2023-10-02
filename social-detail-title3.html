@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Template</title>
+
+    <!-- Favicons -->
+    <link href="images/fav-icon.jpg" rel="icon" />
+    <link href="images/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- CSS only -->
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link href="" rel="stylesheet" />
+    <!-- https://fonts.googleapis.com -->
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script> -->
+
+    <!-- Material Design Iconic Font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+    />
+
+    <!-- Glightbox -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.css"
+    />
+    <!-- A touchable Pure Javascript lightbox with mobile and video support. -->
+
+    <!-- Splitting -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting.css"
+    />
+    <!-- Splitting create elements and adds CSS variables to unlock amazing possibilities for animating text, grids, and more! -->
+
+    <!-- Datatable -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.12.0/css/jquery.dataTables.min.css"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="MyUtil.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      class="d-none flex-column bg-black justify-content-center position-fixed w-100 h-100 top-0 left-0 text-center opacity-100 z-10"
+    >
+      <div class="logo">
+        <img src="images/logo1.png" alt="" class="width-200 unselectable" />
+      </div>
+
+      <div class="d-flex flex-column align-items-center m-t-30"></div>
+    </div>
+
+    <!-- ======= Top Bar ======= -->
+    <!-- <section id="topbar" class="d-flex justify-content-between align-items-center bg-black">
+		<div class=""></div>
+		<marquee id="headerplay" behavior="sliding" direction="left" scrollamount="10" loop="-1">
+			Hello World	Hello World	Hello World	Hello World	Hello World	Hello World	Hello World	Hello World	Hello World
+		</marquee>
+		<div class=""></div>
+	</section> -->
+
+    <!-- ======= Header ======= -->
+    <header class="d-flex align-items-center bg-white">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div>
+          <a href="/"
+            ><img
+              src="images/logo1.png"
+              alt=""
+              class="p-0 m-0 unselectable"
+              height="40"
+          /></a>
+        </div>
+
+        <nav class="p-tb-20 d-flex">
+          <ul
+            class="position-relative d-flex align-items-center justify-content-between"
+          >
+            <li class="position-relative p-lr-20 p-tb-8">
+              <a class="unselectable position-relative" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="position-relative p-lr-20 p-tb-8">
+              <a class="unselectable position-relative cursordefault"
+                ><span>About Us</span></a
+              >
+              <ul
+                class="d-block position-absolute start-0 m-0 px-auto py-2 unselectable z-3"
+              >
+                <li>
+                  <a class="d-block p-tb-8" href="founder-message.html">Message from founder</a>
+                </li>
+                <li><a class="d-block p-tb-8" href="history.html">History</a></li>
+                <li><a class="d-block p-tb-8" href="about-us.html">About Us</a></li>
+                <li>
+                  <a class="d-block p-tb-8" href="organization-chart.html">Organization chart</a>
+                </li>
+              </ul>
+            </li>
+            <li class="position-relative p-lr-20 p-tb-8 active">
+              <a class="unselectable position-relative cursordefault"
+                >Activities
+              </a>
+              <ul
+                class="d-block position-absolute start-0 m-0 px-auto py-2 unselectable z-3"
+              >
+                <li>
+                  <a class="d-block p-tb-8" href="medical-activities.html">Medical Activities</a
+                  >
+                </li>
+                <li>
+                  <a class="d-block p-tb-8" href="education-activities.html">Educational support</a>
+                </li>
+                <li>
+                  <a class="d-block p-tb-8" href="social-activities.html"
+                    >Supporting social indepedence</a
+                  >
+                </li>
+                <li>
+                  <a class="d-block p-tb-8" href="new-activities.html">New Hospital Project</a>
+                </li>
+              </ul>
+            </li>
+            <li class="position-relative p-lr-20 p-tb-8">
+              <a class="unselectable position-relative cursordefault"
+                >Get involved</a
+              >
+              <ul
+                class="d-block position-absolute start-0 m-0 px-auto py-2 unselectable z-3"
+              >
+                <li>
+                  <a class="d-block p-tb-8" href="individual-support.html">Individual Support</a>
+                </li>
+                <li><a class="d-block p-tb-8" href="corporate-support.html">Corporate Support</a></li>
+                <li><a class="d-block p-tb-8" href="ways-to-get-involved.html">Ways to Get Involved</a></li>
+                <li><a class="d-block p-tb-8" href="support-us.html">Support Us</a></li>
+              </ul>
+            </li>
+            <li class="position-relative p-lr-20 p-tb-8">
+              <a class="unselectable position-relative" href="current-project.html">Current Projects</a>
+            </li>
+            <li class="position-relative p-lr-20 p-tb-8">
+              <a class="unselectable position-relative" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="dropdown p-lr-12">
+            <button
+              class="dropdown-toggle parallelogram p-all-10 width-50 d-flex justify-content-center align-items-center show"
+              style="padding-bottom: 11px"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              id="languagechange"
+            >
+              <div class="selected-dropdownimg">
+                <img
+                  src="images/united-kingdom.png"
+                  alt="lang"
+                />
+              </div>
+            </button>
+            <div
+              class="dropdown-menu min-w-65"
+              style="background: rgb(59, 55, 53)"
+            >
+              <div>
+                <a
+                  class="dropdown-item txt-center"
+                  href=""
+                  ><img class="flagIcon" src="images/united-kingdom.png" alt=""
+                /></a>
+              </div>
+              <div>
+                <a
+                  class="dropdown-item txt-center"
+                  href=""
+                  ><img class="flagIcon" src="images/myanmar.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 justify-content-center">
+              <h2 class="fs-30 py-5 text-center">Achievements of MMTTC Alumni</h2>
+              
+              <!-- Swiper Social Title 3 -->
+              <section class="mb-5">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 justify-content-center text-center">
+                      <!-- Slider main container -->
+                      <div
+                        class="swiper-social swiper pb-5 px-4 pt-3"                        
+                      >
+                        <!-- <h2 class="py-3 cl-white">Supporters/Donors Voice</h2> -->
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="social swiper-slide">
+                            <div class="social-card">
+                                <div class="square-1"></div>
+                                <img src="./images/title-3.png" alt="title 3"/>
+                            </div>
+                          </div>
+        
+                          <div class="social swiper-slide">
+                            <div class="social-card">
+                                <div class="square-1"></div>
+                                <img src="./images/title-32.png" alt="title 3"/>
+                            </div>
+                          </div>
+        
+                          <div class="social swiper-slide">
+                            <div class="social-card">
+                                <div class="square-1"></div>
+                                <img src="./images/title-33.png" alt="title 3"/>
+                            </div>
+                          </div>
+        
+                          <div class="social swiper-slide">
+                            <div class="social-card">
+                                <div class="square-1"></div>
+                                <img src="./images/title-34.png" alt="title 3"/>
+                            </div>
+                          </div>
+
+                        </div>
+        
+        
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination social"></div>
+        
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev social"></div>
+                        <div class="swiper-button-next social"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+              <!-- Social Title 3 Detail -->
+              <section class="social-container social-detail-con mt-5">
+                <div class="row gy-4" style="margin-top: 150px;">
+                    <div class="col-12 col-lg-5">
+                        <div class="social-title-img-con">
+                            <img src="./images/title-35.png" class="first-img" alt="title-3"/>
+                            <img src="./images/title-36.png" class="second-img" alt="title-3"/>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7">
+                      <h2 class="fs-30 mb-3">Yar Moe Myint</h2>
+                        <div class="text-area">
+                            <div class="vertical-left">
+                            </div>
+                            <p> In the 2015-2016 academic year, I had the opportunity to attend a 1-year course in medical massage taught by Japan Heart and worked as a massage therapist.
+                                The youngest son, born to farmer parents in Wa Khe Ma, Irrawaddy, was born blind, so I was given special care by my parents. Due to the family’s economic situation and my parents’ weak views on the blind, I was unable to study at a school. At the age of 6, I went to study at private School for the Blind in Yangon, but I was unhappy and returned home.</p>
+                            <p>At the age of 22, despite my parents’ unwillingness, I decided to leave home to learn massage to get a job on my own, and because I had never been to school, I had many difficulties in learning, but as a result of my passion, teaching support and hard work, I reached the life of a massage therapist I envisioned.</p>
+                            <p>When I started working at a blind massage shop, I had to continue to learn how to manage human relationship, to be a part of good working environment and skill up my massage treatment techniques for many years to be able to give the best treatment services.</p>
+                            <p>I am now happily working in a private massage shop in Hlaing Township with my wife, from Meikhtila, Ma Ei Ei Phyo, who graduated from massage school in 2014-2015.
+                                Now, I have established my own family and supported my parents’ medical expenses with my own income. I have the opportunity to be a parent who can raise my 4-year-old son. Being able to benefit the patients around me with massage therapy, I am satisfied with my life. I am also trying to open my own shop one day.
+                                </p>
+                        </div>                        
+                    </div>
+                </div>
+              </section>
+
+              <section class="social-container social-detail-con">
+                <div class="row gy-4 flex-row-reverse">
+                    <div class="col-12 col-lg-5">
+                        <div class="social-title-img-con">
+                            <img src="./images/title-38.png" class="first-img" alt="title-3"/>
+                            <img src="./images/title-37.png" class="second-img" alt="title-3"/>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7">
+                      <h2 class="fs-30 mb-3">ဒေါ်လမိုင်ဂျာစံ</h2>
+                      <div class="text-area">
+                          <div class="vertical-left">
+                          </div>
+                          <p>From May 2010 to 2011, the medical massage therapist course opened by Japan Heart, was taught directly by Japanese teacher Mr. Shinya Shiozaki, I was able to learn both the manual and practical subjects without difficulty with the translation support of Myanmar staff interpreters.</p>
+                          <p>In 2011-2012, it was fun and interesting to practice teaching to two students at Myitkyina School for the Blind, the mother school of mine, and to visit excursion field trips to other schools for the blind in different regions every 3 months.  Local knowledge was also gained.</p>
+                          <p>In 2012, I received a teacher’s certificate and taught as an assistant teacher.  In November 2013, I passed the entrance exam of the Japanese Medical Massage, and from March 2014 to March 2017, I had the opportunity to study and represent Myanmar at Tsukuba University’s blind massage training school for 3 years.  Although there were language difficulties, thanks to the help of teachers and Japanese friends, I was able achieve the same marks as other students and passed the Japanese government’s massage therapist licensing exam.</p>
+                          <p>After returning to Myanmar, I have been working as a teacher since as it’s my childhood dream, at the training school opened by Japan Heart for the blind people to lead independent lives.
+                              </p>
+                          <p>In the future, as long as I receive support from Japan Heart, I would like to continue working in the development and teaching sector of the blind.  In addition, I was able to open the Sakura Sakura massage shop with basic equipment support from Japan Heart, was closed for 2 years during the COVID-19 epidemic, but was able to reopen with the monthly salary support from Japan Heart and the income received from Mobile Massage Customers who trust in me.  In the future, I wish to expand and open new massage shops not only for my own benefit but also for the employment opportunities of the blind.
+                          </p>
+                      </div>
+                    </div>
+                </div>
+              </section>
+
+              <section class="social-container social-detail-con">
+                <div class="row gy-4">
+                    <div class="col-12 col-lg-5">
+                        <div class="social-title-img-con">
+                            <img src="./images/title-39.png" class="first-img" alt="title-3"/>
+                            <img src="./images/title-40.png" class="second-img" alt="title-3"/>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7">
+                      <h2 class="fs-30 mb-3">U Tin Moe</h2>
+                      <div class="text-area">
+                          <div class="vertical-left">
+                          </div>
+                          <p>U Tin Moe attended Japan Heart Medical Massage Teacher Training Course in 2011 – 2012. The reason I studied medical massage is to share it with blind children and to make a living. During the course, I experienced enjoying learning from a Japanese teacher who teaches well and has strict discipline, enjoy learning medical massage subjects, making friends from various schools, obtaining good teaching and learning methods.</p>
+                          <p>After completing the course, I feel happy for learning a skill and increasing knowledge.  I am glad to learn about the blind massage therapists from Japan and internationally about.  We are happy to have the opportunity to teach back massage techniques to blind children in the future.</p>
+                          <p>In practice, there are successes and difficulties. As achievements; In 2014, we were able to open a school for the blind named, Ba Wa Thit (New Life in meaning), and teach massage therapy to blind students.  Since 2015, I have been able to start teaching therapeutic massage courses based on the Japanese Anma technique, taught by instructor Mr. Shinya Shiozaki from Japan Heart, to about ten blind students.  From 2015 to 2023, a total of 70 students were taught therapeutic massage.
+                          </p>
+                          <p>There were some difficulties in teaching because of the lack of teaching aids, such as a human skeleton that can be touch by hand, made of natural fiber and modal of internal organs.
+                              </p>
+                          <p>The purpose of starting a school for the blind are to educate blind students in Myanmar, where there are not enough schools for the blind to learn.  Since I am blind, I want to make blind people educated.
+
+                          </p>
+                          <p>The current teaching situation at the school for the blind is Class literature (Kg to university level), Music (Myanmar music and western music), therapeutic massage, Computer and Android Phone Access Technology, Crafts (making baskets, wallets, Keychain). As other development activities; opening massage shops and raising school funds, School fundraising through musical performances.</p>
+                          <p>Challenges facing are the need for funds for the regular operation of school activities, the need to be fully staffed, A comes of blind people’s life development success; two university matriculation students passed,  obtaining jobs for about 50 blind people who have completed therapeutic massage training,  about 10 blind people can open their own private massage shops after receiving massage training, about 10 blind massage therapist are involving in finding school fund, being able to trained elite blind athletes, being able to accept and teach by expanding from 10 to 50 students every year, being able to hire 5 to 15 employees.</p>
+                          <p>In the future, we intend to; increase the number of students from 50 to 100, to expand and construct buildings that can accommodate about 100 students, to build stadiums, to expand and open school-owned massage shops, and to be able to expand the number of employees.</p>
+                      </div>
+                    </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+       
+    </main>
+
+    <footer id="footer">
+      <div class="footer-top unselectable">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Japan Heart</h4>
+              <ul id="footer-contact">
+                <li>
+                  <i class="bx bx-chevron-right"></i> Yangon Office Address: No.
+                  (46) Wireless Lane (2), Yay Kuu Ywar Ma Taung Paing Street,
+                  (9) Quarter, Kabaraye Pagoda Road, Mayangone Township, Yangon,
+                  Myanmar
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> Phone Number:
+                  <a class="cl-primary" href="tel:+95 95068630">
+                    +95 95068630</a
+                  >
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> Email address: <a></a>
+                  <a
+                    class="cl-primary"
+                    href="mailto:contact2jhmyanmar@gmail.com"
+                  >
+                    contact2jhmyanmar@gmail.com</a
+                  >
+                </li>
+
+                <li class="footer-img">
+                  <img src="images/2018-awards-200.jpg" alt="" />
+                </li>
+
+                <li>
+                  Winner of the 2020 UN Inter-Agency Task Force on the
+                  Prevention and Control of Non-communicable Diseases (UNIATF)
+                  awards
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-6 footer-links">
+              <h4>Pages</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="https://www.myanmarpolestar.com">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="https://www.myanmarpolestar.com/destination"
+                    >AboutUs</a
+                  >
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="https://www.myanmarpolestar.com/blogs">Projects</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="https://www.myanmarpolestar.com/blogs">Donate</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="https://www.myanmarpolestar.com/blogs">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h4 class="text-center">Social Networks</h4>
+          <div class="social-links row justify-content-center">
+            <div class="d-flex justify-content-between" style="width: 170px">
+              <a
+                href="https://www.youtube.com/channel/UCOWXAE5cXMeVcAz6GiEZ6Qw"
+                target="_blank"
+                class="youtube"
+                ><i class="fab fa-facebook-square fs-36"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/dan-demo-aba827218/"
+                target="_blank"
+                class="linkedin"
+                ><i class="fab fa-instagram fs-36"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/dan-demo-aba827218/"
+                target="_blank"
+                class="linkedin"
+                ><i class="fab fa-twitter-square fs-36"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/dan-demo-aba827218/"
+                target="_blank"
+                class="linkedin"
+                ><i class="fab fa-youtube-square fs-36"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright unselectable">
+          © Copyright <a href="" class="cl-primary">Japan Heart</a> Powered by
+          <strong><span>Hello World</span></strong>
+        </div>
+        <div class="credits"></div>
+      </div>
+    </footer>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!--Swiper is the most modern free mobile touch slider. -->
+
+    <!-- Glightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+    <!-- A touchable Pure Javascript lightbox with mobile and video support. -->
+
+    <!-- Splitting -->
+     <!-- <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script> -->
+    <!-- Splitting create elements and adds CSS variables to unlock amazing possibilities for animating text, grids, and more! -->
+
+    <!-- Main Js -->
+    <script src="main.js"></script>
+  </body>
+</html>

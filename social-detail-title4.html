@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Template</title>
+
+    <!-- Favicons -->
+    <link href="images/fav-icon.jpg" rel="icon" />
+    <link href="images/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- CSS only -->
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link href="" rel="stylesheet" />
+    <!-- https://fonts.googleapis.com -->
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script> -->
+
+    <!-- Material Design Iconic Font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+    />
+
+    <!-- Glightbox -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.css"
+    />
+    <!-- A touchable Pure Javascript lightbox with mobile and video support. -->
+
+    <!-- Splitting -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting.css"
+    />
+    <!-- Splitting create elements and adds CSS variables to unlock amazing possibilities for animating text, grids, and more! -->
+
+    <!-- Datatable -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.12.0/css/jquery.dataTables.min.css"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="MyUtil.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      class="d-none flex-column bg-black justify-content-center position-fixed w-100 h-100 top-0 left-0 text-center opacity-100 z-10"
+    >
+      <div class="logo">
+        <img src="images/logo1.png" alt="" class="width-200 unselectable" />
+      </div>
+
+      <div class="d-flex flex-column align-items-center m-t-30"></div>
+    </div>
+
+    <!-- ======= Top Bar ======= -->
+    <!-- <section id="topbar" class="d-flex justify-content-between align-items-center bg-black">
+		<div class=""></div>
+		<marquee id="headerplay" behavior="sliding" direction="left" scrollamount="10" loop="-1">
+			Hello World	Hello World	Hello World	Hello World	Hello World	Hello World	Hello World	Hello World	Hello World
+		</marquee>
+		<div class=""></div>
+	</section> -->
+
+    <!-- ======= Header ======= -->
+    <header class="d-flex align-items-center bg-white">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div>
+          <a href="/"
+            ><img
+              src="images/logo1.png"
+              alt=""
+              class="p-0 m-0 unselectable"
+              height="40"
+          /></a>
+        </div>
+
+        <nav class="p-tb-20 d-flex">
+          <ul
+            class="position-relative d-flex align-items-center justify-content-between"
+          >
+            <li class="position-relative p-lr-20 p-tb-8">
+              <a class="unselectable position-relative" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="position-relative p-lr-20 p-tb-8">
+              <a class="unselectable position-relative cursordefault"
+                ><span>About Us</span></a
+              >
+              <ul
+                class="d-block position-absolute start-0 m-0 px-auto py-2 unselectable z-3"
+              >
+                <li>
+                  <a class="d-block p-tb-8" href="founder-message.html">Message from founder</a>
+                </li>
+                <li><a class="d-block p-tb-8" href="history.html">History</a></li>
+                <li><a class="d-block p-tb-8" href="about-us.html">About Us</a></li>
+                <li>
+                  <a class="d-block p-tb-8" href="organization-chart.html">Organization chart</a>
+                </li>
+              </ul>
+            </li>
+            <li class="position-relative p-lr-20 p-tb-8 active">
+              <a class="unselectable position-relative cursordefault"
+                >Activities
+              </a>
+              <ul
+                class="d-block position-absolute start-0 m-0 px-auto py-2 unselectable z-3"
+              >
+                <li>
+                  <a class="d-block p-tb-8" href="medical-activities.html">Medical Activities</a
+                  >
+                </li>
+                <li>
+                  <a class="d-block p-tb-8" href="education-activities.html">Educational support</a>
+                </li>
+                <li>
+                  <a class="d-block p-tb-8" href="social-activities.html"
+                    >Supporting social indepedence</a
+                  >
+                </li>
+                <li>
+                  <a class="d-block p-tb-8" href="new-activities.html">New Hospital Project</a>
+                </li>
+              </ul>
+            </li>
+            <li class="position-relative p-lr-20 p-tb-8">
+              <a class="unselectable position-relative cursordefault"
+                >Get involved</a
+              >
+              <ul
+                class="d-block position-absolute start-0 m-0 px-auto py-2 unselectable z-3"
+              >
+                <li>
+                  <a class="d-block p-tb-8" href="individual-support.html">Individual Support</a>
+                </li>
+                <li><a class="d-block p-tb-8" href="corporate-support.html">Corporate Support</a></li>
+                <li><a class="d-block p-tb-8" href="ways-to-get-involved.html">Ways to Get Involved</a></li>
+                <li><a class="d-block p-tb-8" href="support-us.html">Support Us</a></li>
+              </ul>
+            </li>
+            <li class="position-relative p-lr-20 p-tb-8">
+              <a class="unselectable position-relative" href="current-project.html">Current Projects</a>
+            </li>
+            <li class="position-relative p-lr-20 p-tb-8">
+              <a class="unselectable position-relative" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="dropdown p-lr-12">
+            <button
+              class="dropdown-toggle parallelogram p-all-10 width-50 d-flex justify-content-center align-items-center show"
+              style="padding-bottom: 11px"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              id="languagechange"
+            >
+              <div class="selected-dropdownimg">
+                <img
+                  src="images/united-kingdom.png"
+                  alt="lang"
+                />
+              </div>
+            </button>
+            <div
+              class="dropdown-menu min-w-65"
+              style="background: rgb(59, 55, 53)"
+            >
+              <div>
+                <a
+                  class="dropdown-item txt-center"
+                  href=""
+                  ><img class="flagIcon" src="images/united-kingdom.png" alt=""
+                /></a>
+              </div>
+              <div>
+                <a
+                  class="dropdown-item txt-center"
+                  href=""
+                  ><img class="flagIcon" src="images/myanmar.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 justify-content-center">
+              <h2 class="fs-30 py-5 text-center">Medical Massage Development related other activities</h2>
+              
+              <!-- Swiper Social Title 3 -->
+              <section class="mb-5">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 justify-content-center text-center">
+                      <!-- Slider main container -->
+                      <div
+                        class="swiper-social swiper pb-5 px-4 pt-3"                        
+                      >
+                        <!-- <h2 class="py-3 cl-white">Supporters/Donors Voice</h2> -->
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="social swiper-slide">
+                            <div class="social-card">
+                                <div class="square-1"></div>
+                                <img src="./images/title-4.png" alt="title 3"/>
+                            </div>
+                          </div>
+        
+                          <div class="social swiper-slide">
+                            <div class="social-card">
+                                <div class="square-1"></div>
+                                <img src="./images/title-41.png" alt="title 3"/>
+                            </div>
+                          </div>
+        
+                          <div class="social swiper-slide">
+                            <div class="social-card">
+                                <div class="square-1"></div>
+                                <img src="./images/title-42.png" alt="title 3"/>
+                            </div>
+                          </div>
+        
+                          <div class="social swiper-slide">
+                            <div class="social-card">
+                                <div class="square-1"></div>
+                                <img src="./images/title-43.png" alt="title 3"/>
+                            </div>
+                          </div>
+
+                          <div class="social swiper-slide">
+                            <div class="social-card">
+                                <div class="square-1"></div>
+                                <img src="./images/title-44.png" alt="title 3"/>
+                            </div>
+                          </div>
+        
+                          <div class="social swiper-slide">
+                            <div class="social-card">
+                                <div class="square-1"></div>
+                                <img src="./images/title-45.png" alt="title 3"/>
+                            </div>
+                          </div>
+
+                          <div class="social swiper-slide">
+                            <div class="social-card">
+                                <div class="square-1"></div>
+                                <img src="./images/title-46.png" alt="title 3"/>
+                            </div>
+                          </div>
+
+                        </div>
+        
+        
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination social"></div>
+        
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev social"></div>
+                        <div class="swiper-button-next social"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+              <!--  -->
+              <div class="row gy-4" style="margin-top: 100px;">
+                <div class="col-12 col-lg-4">
+                  <div class="social-p" style="background: #fff;">
+                    <h2 class="fs-20 mb-3">Presentation at WBUAP 14th Regional Assembly, Massage Commission Meeting</h2>
+                    <p>Presentation in China on 8th May 2018 at Asia Pacific Massage Commission Network of World Blind Union. Japan Heart participated in The World Blind Union Asia Pacific (WBUAP) Regional Massage Commission, the 14th Regional Massage Seminar held in Fuzhou, China. As only organization which presents about the Myanmar situation, Japan Heart was selected as a speaker to speak under the title with “Blind Massage Situation in Myanmar, How blind people take privilege in Myanmar & How to Protect this right in the future”. This was the opportunity to inform the world about Japan Heart’s activities in blind masseurs training, as well as the committee activity to establish the licensure system in Myanmar with an affirmative action policy. Concerning the increase of massage shops in Myanmar, the session speaks about the importance of creating the friendliest system for the persons with visual impairment and maximise the right of blind people by learning from the other country’s situation.</p>
+                 </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="social-p" style="background: #c81133;">
+                    <h2 class="fs-20 mb-3 text-white">Japan Excursion Trip</h2>
+                    <p class="text-white">The excursion trip was conducted in the last week of May, 2018 to see how the persons with disabilities are working in Japan. The participants could learn about the opportunity in blind medical massage in Japan where blind people are privileged to work in the area. Particularly, the participants visited National Rehabilitation center in Saitama and Tsukuba Blind School to learn about the curriculum and training system for the blind. In addition, participants could see private companies, Softbank, where persons with visual disability are hired as medical masseur as the company’s health keeper. In addition, they visited different private companies including Japan Airline to see how the persons with disabilities are working in private companies such as being in charge of reservation. The more ideas come to the participants in how disability population could work in the context of Myanmar.</p>
+                 </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="social-p" style="background: #fff;">
+                    <h2 class="fs-20 mb-3">Medical Massage Development related Local activities</h2>
+                    <p>Japan Heart also organized to launch Medical Massage Text Books, under management of Standard Curriculum Steering Committee members, including related National Association of persons with disabilities, Schools for the blind, in-charge of medical massage training centers, blind masseurs and authorities in-charge from concern department of disability focal Ministry.</p>
+                    <p>Moreover, Japan Heart was a member of Employment Sub-Committee member of National Committee on the Rights of Persons with Disabilities (2018-2019).</p>
+                 </div>
+                </div>
+              </div>
+
+             <section class="social-container social-detail-con">
+                <div class="row gy-4" style="margin-top: 150px;">
+                    <div class="col-12 col-lg-5">
+                        <div class="social-title-img-con">
+                            <img src="./images/title-47.png" class="first-img" alt="title-3"/>
+                            <img src="./images/title-48.png" class="second-img" alt="title-3"/>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7">
+                      <h2 class="fs-30 mb-3">Mr. Katsuya Ashida</h2>
+                        <div class="text-area">
+                            <div class="vertical-left">
+                            </div>
+                            <p> I am Katsuya Ashida, a masseuse, acupuncturist and moxibustionist.
+                                Currently, preparing to open the only massage shop for the visual disability in Bangladesh.
+                               </p>
+                            <p>From 2012 to 2022, I was dispatched to Myanmar from Heart Medical Group in Japan and was in charge of the operation of Blind Medical Massage “Nagomi”.
+                                From 2014 to 2022, I was in charge of education at MMTTC operated by Japan Heart.  What I taught at MMTTC is the basics of Japanese massage.
+                               </p>
+                            <p>I took care of the basics at the shop and at school.  This is because it is more acceptable for patients to perfect basic techniques that are used almost all the time for almost all patients than advanced techniques that are used for only 10 minutes for 1% of patients.  If you can do even basic techniques well, the treatment will be comfortable, your muscles will become softer, and it will be easier.</p>
+                            <p>It is important to understand what the patient wants and to tailor the treatment accordingly.  It will increase the smiles and happiness of the patient, and also increase the smiles and happiness of those connected to the patient.  I believe that smiles and happiness will spread.
+                                </p>
+                            <p> Being a masseuse is a job that makes it easy to do that, but I think this applies to any job.</p>
+                            <p>I pray that there will be more smiles and happiness in Myanmar.</p>
+                            <p class="thank">Thank you.</p>
+                        </div>                        
+                    </div>
+                </div>
+              </section>
+
+              <section class="social-container social-detail-con">
+                <div class="row gy-4 flex-row-reverse">
+                    <div class="col-12 col-lg-5">
+                        <div class="social-title-img-con">
+                            <img src="./images/title-49.png" class="first-img" alt="title-3"/>
+                            <img src="./images/title-50.png" class="second-img" alt="title-3"/>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7">
+                      <h2 class="fs-30 mb-3">Mr. Kasumi Nakajima</h2>
+                        <div class="text-area">
+                            <ul>
+                                <li>Vocational training for the visual disability in Myanmar has produced many graduates and teachers with the support of Japan Heart.  Visual disability people in Myanmar became self-reliant by earning wages by acquiring massage skills through vocational training.  This system is spread all over Myanmar. </li>
+                                <li>Problems Education, Braille penetration rate, and vocational training for the visual disability in Myanmar lags behind neighboring countries and the Asia-Pacific region.</li>
+                                <li>Future efforts: Due to the coronavirus and changes in social conditions, we are seeing suspension of support and suspension of projects.  We sincerely hope for early resumption.</li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+              </section>
+
+            </div>
+          </div>
+        </div>
+       
+    </main>
+
+    <footer id="footer">
+      <div class="footer-top unselectable">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Japan Heart</h4>
+              <ul id="footer-contact">
+                <li>
+                  <i class="bx bx-chevron-right"></i> Yangon Office Address: No.
+                  (46) Wireless Lane (2), Yay Kuu Ywar Ma Taung Paing Street,
+                  (9) Quarter, Kabaraye Pagoda Road, Mayangone Township, Yangon,
+                  Myanmar
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> Phone Number:
+                  <a class="cl-primary" href="tel:+95 95068630">
+                    +95 95068630</a
+                  >
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> Email address: <a></a>
+                  <a
+                    class="cl-primary"
+                    href="mailto:contact2jhmyanmar@gmail.com"
+                  >
+                    contact2jhmyanmar@gmail.com</a
+                  >
+                </li>
+
+                <li class="footer-img">
+                  <img src="images/2018-awards-200.jpg" alt="" />
+                </li>
+
+                <li>
+                  Winner of the 2020 UN Inter-Agency Task Force on the
+                  Prevention and Control of Non-communicable Diseases (UNIATF)
+                  awards
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-6 footer-links">
+              <h4>Pages</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="https://www.myanmarpolestar.com">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="https://www.myanmarpolestar.com/destination"
+                    >AboutUs</a
+                  >
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="https://www.myanmarpolestar.com/blogs">Projects</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="https://www.myanmarpolestar.com/blogs">Donate</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="https://www.myanmarpolestar.com/blogs">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h4 class="text-center">Social Networks</h4>
+          <div class="social-links row justify-content-center">
+            <div class="d-flex justify-content-between" style="width: 170px">
+              <a
+                href="https://www.youtube.com/channel/UCOWXAE5cXMeVcAz6GiEZ6Qw"
+                target="_blank"
+                class="youtube"
+                ><i class="fab fa-facebook-square fs-36"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/dan-demo-aba827218/"
+                target="_blank"
+                class="linkedin"
+                ><i class="fab fa-instagram fs-36"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/dan-demo-aba827218/"
+                target="_blank"
+                class="linkedin"
+                ><i class="fab fa-twitter-square fs-36"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/dan-demo-aba827218/"
+                target="_blank"
+                class="linkedin"
+                ><i class="fab fa-youtube-square fs-36"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright unselectable">
+          © Copyright <a href="" class="cl-primary">Japan Heart</a> Powered by
+          <strong><span>Hello World</span></strong>
+        </div>
+        <div class="credits"></div>
+      </div>
+    </footer>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!--Swiper is the most modern free mobile touch slider. -->
+
+    <!-- Glightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+    <!-- A touchable Pure Javascript lightbox with mobile and video support. -->
+
+    <!-- Splitting -->
+     <!-- <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script> -->
+    <!-- Splitting create elements and adds CSS variables to unlock amazing possibilities for animating text, grids, and more! -->
+
+    <!-- Main Js -->
+    <script src="main.js"></script>
+  </body>
+</html>
