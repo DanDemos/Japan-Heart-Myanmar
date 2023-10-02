@@ -68,10 +68,12 @@ document.addEventListener("DOMContentLoaded", function () {
   })
   const donationDescriptions = document.querySelectorAll(".donation-description.pb-3")
   donationDescriptions.forEach(donationDescription => {
+    const wordcount = Number(donationDescription.getAttribute("word"));
+    console.log(wordcount || 250)
     if (donationDescription.innerHTML) {
       donationDescription.innerHTML = donationDescription.innerHTML.replace(/\s+/g, ' ');
-      if (donationDescription.innerHTML.length > 250) {
-        donationDescription.innerHTML = (donationDescription.innerHTML.slice(0, 250 - 1) || '') + '&hellip;';
+      if (donationDescription.innerHTML.length > (wordcount || 250)) {
+        donationDescription.innerHTML = (donationDescription.innerHTML.slice(0, (wordcount || 250) - 1) || '') + '&hellip;';
       }
       else {
         donationDescription.innerHTML = donationDescription.innerHTML
