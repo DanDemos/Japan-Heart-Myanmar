@@ -25,9 +25,21 @@ document.addEventListener("DOMContentLoaded", function () {
     isLoop = false;
   }
 
+  var socialPreview=3
+
+  if(window.innerWidth > 992){
+    socialPreview=3
+  }
+  else if(window.innerWidth > 769){
+    socialPreview=2
+  }
+  else{
+    socialPreview=1
+  }
+
   const swiper1 = new Swiper(".swiper-donor", {
     loop: isLoop,
-    slidesPerView: 3,
+    slidesPerView: socialPreview,
     slidesPerGroup: 1,
     spaceBetween: 50,
     navigation: {
@@ -40,21 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  // Swiper for social detail
-  var socialPreview=3
-
-  if(window.innerWidth > 992){
-    socialPreview=3
-    console.log('socialPreview',socialPreview)
-  }
-  else if(window.innerWidth > 769){
-    socialPreview=2
-    console.log('socialPreview',socialPreview)
-  }
-  else{
-    socialPreview=1
-    console.log('socialPreview',socialPreview)
-  }
+  // Swiper for social detail  
 
   if ($('.swiper-social .swiper-slide').length < 3) {
     isLoop = false;
@@ -75,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  const homeSliderTexts = document.querySelectorAll(".home.swiper-slide .row .col-8.d-flex.flex-column.justify-content-center p")
+  const homeSliderTexts = document.querySelectorAll(".home.swiper-slide .row.home-slider-card .col-12.col-md-8.d-flex.flex-column.justify-content-center p")
   homeSliderTexts.forEach(homeSliderText => {
     if (homeSliderText.innerHTML) {
       homeSliderText.innerHTML = homeSliderText.innerHTML.replace(/\s+/g, ' ');
@@ -103,12 +101,10 @@ document.addEventListener("DOMContentLoaded", function () {
   })
   const donationDescriptions = document.querySelectorAll(".donation-description.pb-3")
   donationDescriptions.forEach(donationDescription => {
-    const wordcount = Number(donationDescription.getAttribute("word"));
-    console.log(wordcount || 250)
     if (donationDescription.innerHTML) {
       donationDescription.innerHTML = donationDescription.innerHTML.replace(/\s+/g, ' ');
-      if (donationDescription.innerHTML.length > (wordcount || 250)) {
-        donationDescription.innerHTML = (donationDescription.innerHTML.slice(0, (wordcount || 250) - 1) || '') + '&hellip;';
+      if (donationDescription.innerHTML.length > 250) {
+        donationDescription.innerHTML = (donationDescription.innerHTML.slice(0, 250 - 1) || '') + '&hellip;';
       }
       else {
         donationDescription.innerHTML = donationDescription.innerHTML
@@ -118,6 +114,27 @@ document.addEventListener("DOMContentLoaded", function () {
   })
 
 });
+
+// Header responsive
+
+const header = document.querySelector('header')
+const nav = document.querySelector('nav')
+const menuBtn = document.querySelector('.menu-btn')
+const headerRow = document.querySelector('.header-row')
+
+menuBtn?.addEventListener('click',_=>{
+  if(menuBtn.classList.contains('open') && header?.classList.contains('active') ){
+    menuBtn.classList.remove('open')
+    header?.classList.remove('active')
+  }
+  else{
+    menuBtn.classList.add('open')
+    header?.classList.add('active')
+  }
+  
+})
+
+
 
 
 
